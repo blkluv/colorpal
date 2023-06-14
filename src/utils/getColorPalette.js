@@ -1,3 +1,10 @@
+function rgbToHex(r, g, b) {
+  r = Math.max(0, Math.min(255, r));
+  g = Math.max(0, Math.min(255, g));
+  b = Math.max(0, Math.min(255, b));
+  return "#" + ((r << 16) | (g << 8) | b).toString(16).padStart(6, "0");
+}
+
 const getColorPalette = (hex) => {
   // Convert hex code to RGB values
   let r = parseInt(hex.substring(0, 2), 16);
@@ -15,12 +22,5 @@ const getColorPalette = (hex) => {
 
   return colorScheme;
 };
-
-function rgbToHex(r, g, b) {
-  r = Math.max(0, Math.min(255, r));
-  g = Math.max(0, Math.min(255, g));
-  b = Math.max(0, Math.min(255, b));
-  return "#" + ((r << 16) | (g << 8) | b).toString(16).padStart(6, "0");
-}
 
 export default getColorPalette;

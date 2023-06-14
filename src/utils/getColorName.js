@@ -1,9 +1,9 @@
-import ColorNamer from "color-namer";
+import colorNamer from "color-namer";
 
-export default (colorCode) => {
-  var names = ColorNamer(colorCode);
+export default function getColorName(colorCode) {
+  const names = colorNamer(colorCode);
   return names.ntc[0].name.toLowerCase().replace(/ /g, "-");
-};
+}
 
 // Works for HEX, HSL, RGB, and RGBA
 

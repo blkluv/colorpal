@@ -20,11 +20,13 @@ export default function NavBar() {
       </Link>
       <div className="">
         <Link href="https://arvrtise.com" passHref>
-          <a target="_blank" rel="noopener noreferrer">
-            <button className="bg-yellow text-black px-4 py-2 rounded-md font-semibold hover:bg-tint-teal active:scale-95 transition-all ease-in-out flex w-max gap-2 justify-center items-center">
-              <Github className="w-6 h-6" />
+          <a target="_blank" rel="noopener noreferrer" className="flex gap-2 items-center">
+            <button className="bg-yellow text-black px-4 py-2 rounded-md font-semibold hover:bg-tint-teal active:scale-95 transition-all ease-in-out">
               ARVRtise
             </button>
+            <span className="hidden md:block">
+              <Github className="w-6 h-6" />
+            </span>
           </a>
         </Link>
       </div>
