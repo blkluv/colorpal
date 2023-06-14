@@ -19,6 +19,9 @@ export default function Trending() {
     return tempArray;
   }, [count]);
 
+  // Example initialization of get10 variable
+  // const get10 = someFunctionCall(); // Replace `someFunctionCall()` with the actual function call
+
   // When the user clicks on the button, scroll to the top of the document
   // Smooth Variant
   function topFunction() {
