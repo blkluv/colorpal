@@ -1,13 +1,14 @@
 import ColorNamer from "color-namer";
+
 export default (colorCode) => {
   var names = ColorNamer(colorCode);
-  return names.ntc[0].name.toLowerCase().replaceAll(" ", "-");
+  return names.ntc[0].name.toLowerCase().replace(/ /g, "-");
 };
 
 // Works for HEX, HSL, RGB, and RGBA
 
 /*
-Example : 
+Example:
     let colorName = getColorName("#E2D28F");
     console.log(colorName)
 */
