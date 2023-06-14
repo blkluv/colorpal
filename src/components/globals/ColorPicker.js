@@ -22,7 +22,7 @@ export default function ColorPicker({
     document.getElementById(id).value = queryValue;
 
     setIsVisible(true);
-  }, [router.isReady, id]);
+  }, [router.isReady, id, router.query]); // Include `router.query` in the dependency array
 
   useEffect(() => {
     if (isVisible && router.isReady) {
