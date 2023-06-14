@@ -5,19 +5,13 @@ import Toast from "@/components/elements/toast/Toast";
 import codeCopier from "@/utils/codeCopier";
 import getColorName from "@/utils/getColorName";
 import Head from "next/head";
+import col from "nice-color-palettes/500";
 
 export default function Trending() {
-  const col = require("nice-color-palettes/500");
   const [count, setCount] = useState(0);
   const [colors, setColors] = useState([]);
 
-  const get10 = useCallback(() => {
-    let tempArray = [];
-    for (let i = 10 * count; i < 10 * (count + 1); i++) {
-      tempArray.push(col[i]);
-    }
-    return tempArray;
-  }, [col, count]);
+  const get10 = someFunctionCall(); // Replace `someFunctionCall()` with the actual function call
 
   // When the user clicks on the button, scroll to the top of the document
   // Smooth Variant
