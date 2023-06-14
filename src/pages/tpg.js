@@ -49,22 +49,22 @@ export default function Tpg() {
   return (
     <>
       <Head>
-        <title>ColPat : TailwindCSS Palette Generator</title>
-        <meta name="title" content="ColPat : TailwindCSS Palette Generator" />
+        <title>AICOLOR : TailwindCSS Palette Generator</title>
+        <meta name="title" content="AICOLOR : TailwindCSS Palette Generator" />
         <meta
           name="description"
-          content="ColPat's Tailwind Palette Generator feature is specifically designed for developers who use Tailwind CSS. With just a click, you can generate color palettes for your next Tailwind-powered project. This feature saves you time and effort in selecting colors that match Tailwind's design system."
+          content="AICOLOR's Tailwind Palette Generator feature is specifically designed for developers who use Tailwind CSS. With just a click, you can generate color palettes for your next Tailwind-powered project. This feature saves you time and effort in selecting colors that match Tailwind's design system."
         />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://colpat.itsvg.in/tpg" />
         <meta
           property="og:title"
-          content="ColPat : TailwindCSS Palette Generator"
+          content="AICOLOR : TailwindCSS Palette Generator"
         />
         <meta
           property="og:description"
-          content="ColPat's Tailwind Palette Generator feature is specifically designed for developers who use Tailwind CSS. With just a click, you can generate color palettes for your next Tailwind-powered project. This feature saves you time and effort in selecting colors that match Tailwind's design system."
+          content="AICOLOR's Tailwind Palette Generator feature is specifically designed for developers who use Tailwind CSS. With just a click, you can generate color palettes for your next Tailwind-powered project. This feature saves you time and effort in selecting colors that match Tailwind's design system."
         />
         <meta
           property="og:image"
@@ -74,11 +74,11 @@ export default function Tpg() {
         <meta property="twitter:url" content="https://colpat.itsvg.in/tpg" />
         <meta
           property="twitter:title"
-          content="ColPat : TailwindCSS Palette Generator"
+          content="AICOLOR : TailwindCSS Palette Generator"
         />
         <meta
           property="twitter:description"
-          content="ColPat's Tailwind Palette Generator feature is specifically designed for developers who use Tailwind CSS. With just a click, you can generate color palettes for your next Tailwind-powered project. This feature saves you time and effort in selecting colors that match Tailwind's design system."
+          content="AICOLOR's Tailwind Palette Generator feature is specifically designed for developers who use Tailwind CSS. With just a click, you can generate color palettes for your next Tailwind-powered project. This feature saves you time and effort in selecting colors that match Tailwind's design system."
         />
         <meta
           property="twitter:image"

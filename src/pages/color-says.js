@@ -7,19 +7,19 @@ export default function ColorSays() {
   return (
     <>
       <Head>
-        <title>ColPat : What Color Says</title>
-        <meta name="title" content="ColPat : What Color Says" />
+        <title>AICOLOR : What Color Says</title>
+        <meta name="title" content="AICOLOR : What Color Says" />
         <meta
           name="description"
-          content="ColPat's What Color Says! feature allows you to understand the significance of a color and decide which color suits you the best. This feature provides insights into the psychology of color and how different colors can affect emotions and behavior. This feature is useful when you want to create a design that resonates with your target audience."
+          content="AICOLOR's What Color Says! feature allows you to understand the significance of a color and decide which color suits you the best. This feature provides insights into the psychology of color and how different colors can affect emotions and behavior. This feature is useful when you want to create a design that resonates with your target audience."
         />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://colpat.itsvg.in/color-says" />
-        <meta property="og:title" content="ColPat : What Color Says" />
+        <meta property="og:title" content="AICOLOR : What Color Says" />
         <meta
           property="og:description"
-          content="ColPat's What Color Says! feature allows you to understand the significance of a color and decide which color suits you the best. This feature provides insights into the psychology of color and how different colors can affect emotions and behavior. This feature is useful when you want to create a design that resonates with your target audience."
+          content="AICOLOR's What Color Says! feature allows you to understand the significance of a color and decide which color suits you the best. This feature provides insights into the psychology of color and how different colors can affect emotions and behavior. This feature is useful when you want to create a design that resonates with your target audience."
         />
         <meta
           property="og:image"
@@ -30,10 +30,10 @@ export default function ColorSays() {
           property="twitter:url"
           content="https://colpat.itsvg.in/color-says"
         />
-        <meta property="twitter:title" content="ColPat : What Color Says" />
+        <meta property="twitter:title" content="AICOLOR : What Color Says" />
         <meta
           property="twitter:description"
-          content="ColPat's What Color Says! feature allows you to understand the significance of a color and decide which color suits you the best. This feature provides insights into the psychology of color and how different colors can affect emotions and behavior. This feature is useful when you want to create a design that resonates with your target audience."
+          content="AICOLOR's What Color Says! feature allows you to understand the significance of a color and decide which color suits you the best. This feature provides insights into the psychology of color and how different colors can affect emotions and behavior. This feature is useful when you want to create a design that resonates with your target audience."
         />
         <meta
           property="twitter:image"

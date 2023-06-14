@@ -3,7 +3,7 @@ import Toast from "@/components/elements/toast/Toast";
 import codeCopier from "@/utils/codeCopier";
 import getColorName from "@/utils/getColorName";
 import Head from "next/head";
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState, useCallback } from "react";
 import {
   CaretLeftFill,
   CaretRightFill,
@@ -15,16 +15,16 @@ export default function Trending() {
   const [count, setCount] = useState(0);
   const [colors, setColors] = useState(get10);
 
-  //   Get 10 colors from the list of 100 or 200 or 500 colors as displaying all at once would be pain in ass
-  function get10() {
+  const get10 = useCallback(() => {
     let tempArray = [];
     for (let i = 10 * count; i < 10 * (count + 1); i++) {
       tempArray.push(col[i]);
     }
     return tempArray;
-  }
+  }, [col, count]);
+
   // When the user clicks on the button, scroll to the top of the document
-  //   Smooth Varient
+  // Smooth Variant
   function topFunction() {
     window.scroll({
       top: 0,
@@ -32,26 +32,28 @@ export default function Trending() {
       behavior: "smooth",
     });
   }
+
   useLayoutEffect(() => {
-    setColors(get10);
+    setColors(get10());
     topFunction();
-  }, [count]);
+  }, [get10]);
+
   return (
     <>
       <Head>
-        <title>ColPat : Trending Palettes 🔥</title>
+        <title>AICOLOR : Trending Palettes 🔥</title>
         <meta name="title" content="ColPat : Trending Palettes 🔥" />
         <meta
           name="description"
-          content="ColPat's Trending Color Palettes feature allows you to stay on top of the latest color trends. Whether you're designing a website, creating a marketing campaign, or designing a product, this feature can help you select the most popular colors for your project. You can also customize the palettes to your liking with ColPat's user-friendly interface."
+          content="AICOLOR's Trending Color Palettes feature allows you to stay on top of the latest color trends. Whether you're designing a website, creating a marketing campaign, or designing a product, this feature can help you select the most popular colors for your project. You can also customize the palettes to your liking with AICOLOR's user-friendly interface."
         />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://colpat.itsvg.in/trending" />
-        <meta property="og:title" content="ColPat : Trending Palettes 🔥" />
+        <meta property="og:title" content="AICOLOR : Trending Palettes 🔥" />
         <meta
           property="og:description"
-          content="ColPat's Trending Color Palettes feature allows you to stay on top of the latest color trends. Whether you're designing a website, creating a marketing campaign, or designing a product, this feature can help you select the most popular colors for your project. You can also customize the palettes to your liking with ColPat's user-friendly interface."
+          content="AICOLOR's Trending Color Palettes feature allows you to stay on top of the latest color trends. Whether you're designing a website, creating a marketing campaign, or designing a product, this feature can help you select the most popular colors for your project. You can also customize the palettes to your liking with AICOLOR's user-friendly interface."
         />
         <meta
           property="og:image"
@@ -64,11 +66,11 @@ export default function Trending() {
         />
         <meta
           property="twitter:title"
-          content="ColPat : Trending Palettes 🔥"
+          content="AICOLOR : Trending Palettes 🔥"
         />
         <meta
           property="twitter:description"
-          content="ColPat's Trending Color Palettes feature allows you to stay on top of the latest color trends. Whether you're designing a website, creating a marketing campaign, or designing a product, this feature can help you select the most popular colors for your project. You can also customize the palettes to your liking with ColPat's user-friendly interface."
+          content="AICOLOR's Trending Color Palettes feature allows you to stay on top of the latest color trends. Whether you're designing a website, creating a marketing campaign, or designing a product, this feature can help you select the most popular colors for your project. You can also customize the palettes to your liking with AICOLOR's user-friendly interface."
         />
         <meta
           property="twitter:image"

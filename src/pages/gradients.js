@@ -10,20 +10,20 @@ export default function Gradients() {
   return (
     <>
       <Head>
-        <title>ColPat : Awesome Gradients ✨</title>
-        <meta name="title" content="ColPat : Awesome Gradients ✨" />
+        <title>AICOLOR : Awesome Gradients ✨</title>
+        <meta name="title" content="AICOLOR : Awesome Gradients ✨" />
         <meta
           name="description"
-          content="ColPat's Awesome Gradients feature allows you to generate infinite gradients with ease. Gradients can add depth and texture to your designs and make them more visually appealing. With this feature, you can experiment with different color combinations and create gradients that suit your design needs.
+          content="AICOLOR's Awesome Gradients feature allows you to generate infinite gradients with ease. Gradients can add depth and texture to your designs and make them more visually appealing. With this feature, you can experiment with different color combinations and create gradients that suit your design needs.
 "
         />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://colpat.itsvg.in/gradients" />
-        <meta property="og:title" content="ColPat : Awesome Gradients ✨" />
+        <meta property="og:title" content="AICOLOR : Awesome Gradients ✨" />
         <meta
           property="og:description"
-          content="ColPat's Awesome Gradients feature allows you to generate infinite gradients with ease. Gradients can add depth and texture to your designs and make them more visually appealing. With this feature, you can experiment with different color combinations and create gradients that suit your design needs.
+          content="AICOLOR's Awesome Gradients feature allows you to generate infinite gradients with ease. Gradients can add depth and texture to your designs and make them more visually appealing. With this feature, you can experiment with different color combinations and create gradients that suit your design needs.
 "
         />
         <meta
@@ -37,11 +37,11 @@ export default function Gradients() {
         />
         <meta
           property="twitter:title"
-          content="ColPat : Awesome Gradients ✨"
+          content="AICOLOR : Awesome Gradients ✨"
         />
         <meta
           property="twitter:description"
-          content="ColPat's Awesome Gradients feature allows you to generate infinite gradients with ease. Gradients can add depth and texture to your designs and make them more visually appealing. With this feature, you can experiment with different color combinations and create gradients that suit your design needs.
+          content="AICOLOR's Awesome Gradients feature allows you to generate infinite gradients with ease. Gradients can add depth and texture to your designs and make them more visually appealing. With this feature, you can experiment with different color combinations and create gradients that suit your design needs.
 "
         />
         <meta

@@ -1,7 +1,7 @@
-import getColorName from "@/utils/getColorName";
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import { customToast } from "../elements/toast/Toast";
+import getColorName from "@/utils/getColorName";
 
 export default function ColorPicker({
   id,
@@ -10,28 +10,22 @@ export default function ColorPicker({
   updateTailwindShades,
 }) {
   const router = useRouter();
-  // Using this to Solve hydration issue
   const [isVisible, setIsVisible] = useState(false);
 
-  //  WARN: Using Dom method to avoid redering
   useEffect(() => {
     setIsVisible(true);
     if (router.isReady && isVisible) {
-      document.getElementById(`${id}_val`).value =
-        router.query[id] !== "" && router.query[id] !== undefined
-          ? router.query[id]
-          : "#ffffff";
-      document.getElementById(id).value =
-        router.query[id] !== "" && router.query[id] !== undefined
-          ? router.query[id]
-          : "#ffffff";
+      const queryValue = router.query[id] !== "" && router.query[id] !== undefined ? router.query[id] : "#ffffff";
+      document.getElementById(`${id}_val`).value = queryValue;
+      document.getElementById(id).value = queryValue;
     }
-  });
+  }, [router.isReady, isVisible, id]);
+
   useEffect(() => {
     if (isVisible && router.isReady) {
       updateTailwindShades();
     }
-  }, [isVisible, router.isReady]);
+  }, [isVisible, router.isReady, updateTailwindShades]);
 
   return (
     <>
@@ -57,11 +51,7 @@ export default function ColorPicker({
           <button
             className="text-xs bg-tint-emerald text-black w-full py-1 rounded-sm hover:ring-2 ring-offWhite/40"
             onClick={() =>
-              customToast(
-                `Color name is: ${getColorName(
-                  document.getElementById(`${id}_val`).value
-                )}`
-              )
+              customToast(`Color name is: ${getColorName(document.getElementById(`${id}_val`).value)}`)
             }
           >
             Check name

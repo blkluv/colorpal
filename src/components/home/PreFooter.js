@@ -5,12 +5,12 @@ export default function PreFooter() {
     <div className="Menu w-full max-w-[98vw] flex justify-center items-center scale-50 sm:scale-100">
       <ul className="Menu-list" data-offset="10">
         <li className="Menu-list-item font-bold" data-offset="20">
-          COLPAT
+          AICOLOR
           <span className="Mask">
-            <span>COLPAT</span>
+            <span>AICOLOR</span>
           </span>
           <span className="Mask">
-            <span>COLPAT</span>
+            <span>AICOLOR</span>
           </span>
         </li>
         <li className="Menu-list-item text-tint-green flex whitespace-nowrap scale-50 md:scale-100" data-offset="20">

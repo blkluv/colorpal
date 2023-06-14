@@ -7,36 +7,36 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="title" content="ColPat : Color Palette & Design Tool" />
+        <meta name="title" content="AICOLOR : Color Palette & Design Tool" />
         <meta
           name="description"
-          content="ColPat is the ultimate color palette generator with awesome tools. ColPat's AI, user-friendly interface, and customization options make it easy to find the perfect colors. Unleash your creativity and elevate your designs with ColPat!"
+          content="AICOLOR is the ultimate color palette generator with awesome tools. AICOLOR's AI, user-friendly interface, and customization options make it easy to find the perfect colors. Unleash your creativity and elevate your designs with AICOLOR!"
         />
         <meta name="copyright" content="VishwaGauravIn" />
         <meta
           name="keywords"
-          content="ColPat, Color Palette, Gradient, Shade Generator, Color Shade, Tailwind"
+          content="AICOLOR, Color Palette, Gradient, Shade Generator, Color Shade, Tailwind"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="colpat.itsvg.in" />
         <meta
           property="og:title"
-          content="ColPat : Color Palette & Design Tool"
+          content="AICOLOR : Color Palette & Design Tool"
         />
         <meta
           property="og:description"
-          content="ColPat is the ultimate color palette generator with awesome tools. ColPat's AI, user-friendly interface, and customization options make it easy to find the perfect colors. Unleash your creativity and elevate your designs with ColPat!"
+          content="AICOLOR is the ultimate color palette generator with awesome tools. AICOLOR's AI, user-friendly interface, and customization options make it easy to find the perfect colors. Unleash your creativity and elevate your designs with AICOLOR!"
         />
         <meta property="og:image" content="https://colpat.itsvg.in/og.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="colpat.itsvg.in" />
         <meta
           property="twitter:title"
-          content="ColPat : Color Palette & Design Tool"
+          content="AICOLOR : Color Palette & Design Tool"
         />
         <meta
           property="twitter:description"
-          content="ColPat is the ultimate color palette generator with awesome tools. ColPat's AI, user-friendly interface, and customization options make it easy to find the perfect colors. Unleash your creativity and elevate your designs with ColPat!"
+          content="AICOLOR is the ultimate color palette generator with awesome tools. AICOLOR's AI, user-friendly interface, and customization options make it easy to find the perfect colors. Unleash your creativity and elevate your designs with AICOLOR!"
         />
         <meta
           property="twitter:image"
@@ -45,7 +45,7 @@ export default function Document() {
         {/* Google Analytics */}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-7DMF88ZZJV`}
+          src={`https://www.googletagmanager.com/gtag/js?id=GTM-NXQ5RGV`}
         />
         <script
           // eslint-disable-next-line react/no-danger
@@ -54,7 +54,7 @@ export default function Document() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-7DMF88ZZJV', {
+            gtag('config', 'GTM-NXQ5RGV', {
               page_path: window.location.pathname,
             });
           `,
