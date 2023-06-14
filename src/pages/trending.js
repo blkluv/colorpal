@@ -11,7 +11,13 @@ export default function Trending() {
   const [count, setCount] = useState(0);
   const [colors, setColors] = useState([]);
 
-  const get10 = someFunctionCall(); // Replace `someFunctionCall()` with the actual function call
+  const get10 = useCallback(() => {
+    let tempArray = [];
+    for (let i = 10 * count; i < 10 * (count + 1); i++) {
+      tempArray.push(col[i]);
+    }
+    return tempArray;
+  }, [count]);
 
   // When the user clicks on the button, scroll to the top of the document
   // Smooth Variant
